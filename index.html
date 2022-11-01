@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Link rel="stylesheet" href="./style.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+ <div class="container">
+ <div>
+    <div class="navbar">
+        <div class="menu-left">
+            <span class="icon-bar"><i class="fas fa-bars"></i></span>
+            <h1>sneakers</h1>
+            <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        </div>
+        <div class="menu-right">
+            <div><i onclick="cartView()" class="fas fa-shopping-cart"></i></div>
+            <div><img src="./Assets/image-avatar.png" alt="user-avatar" class="user"/></div>
+            <div class="cart-hidden" id="cart-details">
+                <div class="cart-items-hidden" id="cart-items">
+                    <h6>Cart</h6>
+                <div class="cart-empty-none" id="cart-empty">
+                    <div class="cart-price-head">
+                        <div><img  class="cart-detail-image"src="./Assets/image-product-1-thumbnail.jpg"/></div>
+                        <div>
+                            <p class="cart-detail-para">Fall Limited Edition Sneakers</p>
+                            <p class="cart-detail-para">$125.00 X <span id="quan"></span> <span class="dublicate"> = $</span><span id="total"></span><span class="dublicate">.00</span></p>
+                        </div>
+                        <div><i class="fas fa-trash-alt"></i></div>
+                    </div>
+                    <div class="check-btn-head"><button class="check-btn">Checkout</button></div>
+                    </div>
+                    <div><h5 class="cart-have" id="card-val">Your cart is empty</h5></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="left-image">
+        <div><img class="product-image" src="./Assets/image-product-1.jpg"/></div>
+        <div class="thum-head">
+            <img src="./Assets/image-product-1-thumbnail.jpg" class="thumb-image"/>
+            <img src="./Assets/image-product-2-thumbnail.jpg" class="thumb-image"/>
+            <img src="./Assets/image-product-3-thumbnail.jpg" class="thumb-image"/>
+            <img src="./Assets/image-product-4-thumbnail.jpg" class="thumb-image"/>
+        </div>
+        </div>
+        <div class="right-content">
+            <div>
+                <h5 class="headline">SNEAKER COMPANY</h5>
+                <h1 class="brand">Fall Limited Edition<br>Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear
+                <br>companion. Featuring a durable rubber outer sole.they'll<br>
+                withstand eveerything the weather can offer.</p>
+                <div class="price"><h3>$125.00</h3><h5>50%</h5></div>
+                <h5 class="price-old">$250.00</h5>
+                <div class="btn-head">
+                <div class="num-btn">
+                    <button class="btn" onclick="Decrement()">-</button>
+                    <input type="text" id="quantity" value="0"></input>
+                    <button class="btn" onclick="Increment()">+</button>
+                </div>
+                <div><button class="btn-cart" onclick="addToCart()">Add to card</button></div>
+                
+                
+        
+                </div>
+            </div>
+        
+        </div>
+        </div>
+ </div>  
+ <!-- <div class="sidebar"></div>  -->
+
+
+
+
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
