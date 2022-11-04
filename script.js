@@ -50,3 +50,26 @@ function cartView(){
    
     }
 
+
+function OpenSideBar(){
+    let SideBar = document.getElementById("bar-side");
+SideBar.classList.toggle("show-sidebar");
+let sideBarList = document.getElementById("side-ul")
+sideBarList.classList.toggle("sidebar-view-ul");
+let iconView = document.getElementById("closed-icon");
+iconView.classList.toggle("close-icon-view");
+
+}
+
+
+
+
+function closeSideBar(){
+    let SideBar = document.getElementById("bar-side");
+    SideBar.classList.toggle("show-sidebar");
+    let sideBarList = document.getElementById("side-ul")
+sideBarList.classList.toggle("sidebar-view-ul");
+let iconView = document.getElementById("closed-icon");
+iconView.classList.toggle("close-icon-view");
+
+}

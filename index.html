@@ -11,10 +11,22 @@
 <body>
 
  <div class="container">
+    <div class="sidebar" id="bar-side">
+        <div class="close-icon-hide" id="closed-icon">
+            <i class="fa-solid fa-circle-xmark" onclick="closeSideBar()"></i>
+        </div>
+        <ul class="sidebar-ul" id="side-ul">
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
  <div>
     <div class="navbar">
         <div class="menu-left">
-            <span class="icon-bar"><i class="fas fa-bars"></i></span>
+            <span class="icon-bar"><i onclick=" OpenSideBar()" class="fas fa-bars"></i></span>
             <h1>sneakers</h1>
             <ul>
             <li>Collections</li>

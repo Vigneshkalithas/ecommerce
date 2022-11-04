@@ -6,13 +6,23 @@
 .container{
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 /* .sidebar{
     width: 300px;
     height: 100vh;
     background-color: blueviolet;
+    position: absolute;
 } */
+.sidebar{
+    width: 0px;
+    position:absolute;
+    height: 0px;
+}
+.close{
+    display: none;
+}
 .navbar{
     /* background-color: aquamarine; */
     width: 100vw;
@@ -272,8 +282,32 @@ justify-content: center;
 .icon-bar{
     display: none;
 }
-
-
+.sidebar-ul{
+    display: none;
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar-view-ul{
+    display: flex;
+    margin-top:50px;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+.close-icon-hide{
+    display: none;
+}
+.close-icon-view{
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+.close-sidebar{
+    display: none;
+   
+}
 
 
 @media only screen and (max-width: 800px) {
@@ -347,4 +381,11 @@ justify-content: center;
     .icon-bar{
         display: block;
     }
+    .show-sidebar{
+        width: 200px;
+        height: 100%;
+        background-color:white;
+        position: absolute;
+    }
+    
   }
