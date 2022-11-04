@@ -334,7 +334,7 @@ justify-content: center;
         align-items: center;
     }
     .icon-bar{
-        display: block;
+        display: none;
     }
     .dnone{
         display: none;
