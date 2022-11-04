@@ -336,6 +336,9 @@ justify-content: center;
     .icon-bar{
         display: block;
     }
+    .dnone{
+        display: none;
+    }
     
   }
 
